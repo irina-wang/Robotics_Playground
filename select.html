@@ -1,0 +1,123 @@
+---
+title: select page
+---
+
+<div> Selected tags </div>
+<div id="selected_tags"></div>
+
+<script>
+	
+// 	document.addEventListener(document.getElementById("button_level_Easy").click(), function(event) { 
+// 	  						document.getElementById("selected_tags").write = "Is clicked";
+//    });
+ 
+ 
+</script>
+
+
+<h1>The onclick Event</h1>
+
+<p>All the buttons are hardcoded for now, have to figure out the generating sequence function</p>
+<p>Click the button to change color</p>
+
+<script>
+    var tags = {
+        levels:[], 
+        skills:[], 
+        themes:[] };
+
+    var search_for = {
+        levels:["easy", "hard"], 
+        skills:[], 
+        themes:[] };
+</script>
+
+
+<!-- <input type="button" id="button" class="button" value = "button" style= "color:white" onclick="myFunction(id)"/>
+
+
+<input type="button" id="button" class="button" value = "button2" style= "color:white" onclick="myFunction(id)"/>
+<input type="button" id="button" class="button" value = "button3" style= "color:white" onclick="myFunction('button_level_Easy')"/>  -->
+
+<form action:"http://google.com" method:"get"> 
+
+    <input type="button" id="Easy" class="button_level" value = "Easy" style= "color:white" onclick="myFunction(id)">
+    <input type="button" id="Medium" class="button_level" value = "Medium" style= "color:white" onclick="myFunction(id)">
+    <input type="button" id="Hard"  class="button_level" value = "Hard" style= "color:white" onclick="myFunction(id)">
+<div>
+    <input type="submit" value="sort">
+</div>
+
+</form>
+
+
+
+
+<p id="demo"></p>
+<p id="result"></p>
+
+<script>
+function parseStr(){
+    for (var item in window.tags.levels){
+        console.log("Item: " + item);
+    }
+}
+
+function myFunction(selected_level) {
+
+    console.log(selected_level);
+    // console.log(selected_class);
+  	var buttonIcon = document.querySelector('#' + selected_level);
+
+	if (buttonIcon.style.color == 'black'){
+        buttonIcon.style.color = 'white';
+        delElem(selected_level);
+    } else{
+        buttonIcon.style.color = 'black';
+        addElem(selected_level);
+	  }
+  document.getElementById("result").innerHTML = window.tags.levels;
+  document.getElementById("demo").innerHTML += selected_level;
+
+//   sort();
+}
+
+function addElem(selected_level){
+    window.tags.levels.push(selected_level)
+}
+
+function delElem(selected_level){
+    var length = window.tags.levels.length;
+    // console.log("length is " + length);
+    if (length == 0)
+        return;
+
+    var found = length;
+
+    for(var i = 0; i < length ; i++){
+        // console.log("into the first for loop =======");
+        // console.log(i + ": " + window.tags.levels[i]);
+            if( window.tags.levels[i] == selected_level){
+                // console.log("found equal at " +  i);
+                found = i;
+                // console.log("update found to " +  found );
+                break;
+            }
+        }
+
+    // shift everything forward
+    if(found != length){
+        // console.log("now that found is recorded as " + found);
+        for(i = found; i < length - 1 ; i++){
+            // console.log("entering into the second for loop where i is" + i );
+            // console.log( window.tags.levels[i] + " equals" );
+            window.tags.levels[i] = window.tags.levels[ i+1 ]; 
+            // console.log( window.tags.levels[i]);    
+        }
+        // change last elem to null
+        // console.log("now pop the " + length-1  + " element");
+        window.tags.levels.pop();
+    }
+}
+
+</script>

@@ -1,0 +1,27 @@
+---
+title: tag page
+permalink: /tag.html
+---
+
+<h1> This is the {{ page.title }} </h1>
+<h2> I hard coded the selected tags <b> "Easy,Hard"</b> for now</h2>
+<!-- Hard Coded for now -->
+<!-- {% assign search_for = window.tags.levels | split: ',' %}
+{{window.tags.levels}}
+{{window.tags.levels[0]}} -->
+
+{% assign search_for = "Easy,Hard" | split:',' %}
+{% for tags in search_for %}
+    <!-- {{ tags }} -->
+    {% for item in site.data.sudo_data %}
+<!-- Debug: in for loop -->
+        {% if item.levels == tags %}
+    <!-- Debug: in if condition -->
+        <a href="/spike_prime/{{ item.names | split: ' ' | join: '-' | append: ".html" }}">{{ item.names }}</a>
+            <!-- {{ item.levels}} -->
+        {% endif %}
+    {% endfor %}
+{% endfor %}
+
+
+

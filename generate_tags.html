@@ -1,0 +1,130 @@
+---
+title: generate tags page
+---
+
+<h1> This is the {{ page.title }} </h1>
+<h2> I want to experiment with tag selecting and storing json files</h2>
+
+<!-- <div> </div> -->
+
+
+{% comment %}
+=======================
+The following part extracts ***levels***
+=======================
+{% endcomment %}
+
+{% assign dt_level = "" %}
+{% for item in site.data.all_data %}
+<!-- gather name -->
+    {% assign dt_name_temp = item.Names | join:'|' | append:'|' %}
+    {% assign dt_name = dt_name | append:dt_name_temp %}
+<!-- gather level -->
+	{% assign dt_level_temp = item.Levels | join:'|' | append:'|' %}
+    {% assign dt_level = dt_level | append:dt_level_temp %}
+<!-- gather themes -->
+    {% assign dt_theme_temp = item.Themes | join:'|' | append:'|' %}
+    {% assign dt_theme = dt_theme | append:dt_theme_temp %}
+<!-- gather skills -->
+    {% assign dt_skill_temp = item.Skills | join:'|' | append:'|' %}
+	{% assign dt_skill = dt_skill | append:dt_skill_temp %}
+<!-- gather platforms -->
+	{% assign dt_platform_temp = item.Platforms | join:'|' | append:'|' %}
+	{% assign dt_platform = dt_platform | append:dt_platform_temp %}
+{% endfor %}
+{% assign dt_name = dt_name | split:'|' | sort %}
+{% assign dt_level = dt_level | split:'|' | sort %}
+{% assign dt_theme = dt_theme | split:'|' | sort %}
+{% assign dt_skill = dt_skill | split:'|' | sort %}
+{% assign dt_platform = dt_platform | split:'|' | sort %}
+
+{% comment %}
+=======================
+The following part removes dulpicates
+=======================
+{% endcomment %}
+<!-- for name  -->
+{% assign name_tag = "" %}
+{% for tag in dt_name %}
+	{% if tag != "" %}
+		{% if name_tag == "" %}
+			{% assign name_tag = tag | split:'|' %}
+		{% endif %}
+		{% unless name_tag contains tag %}
+			{% assign name_tag = name_tag | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+
+<!-- for level  -->
+{% assign level_tag = "" %}
+{% for tag in dt_level %}
+	{% if tag != "" %}
+		{% if level_tag == "" %}
+			{% assign level_tag = tag | split:'|' %}
+		{% endif %}
+		{% unless level_tag contains tag %}
+			{% assign level_tag = level_tag | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+<!-- for theme -->
+{% assign theme_tag = "" %}
+{% for tag in dt_theme %}
+	{% if tag != "" %}
+		{% if theme_tag == "" %}
+			{% assign theme_tag = tag | split:'|' %}
+		{% endif %}
+		{% unless theme_tag contains tag %}
+			{% assign theme_tag = theme_tag | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+<!-- for skill -->
+{% assign skill_tag = "" %}
+{% for tag in dt_skill %}
+	{% if tag != "" %}
+		{% if skill_tag == "" %}
+			{% assign skill_tag = tag | split:'|' %}
+		{% endif %}
+		{% unless skill_tag contains tag %}
+			{% assign skill_tag = skill_tag | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% endunless %}
+	{% endif %}
+{% endfor %}
+
+{% comment %}
+=======================
+Output the results
+=======================
+{% endcomment %}
+
+<!-- <h3> Names: 
+    {% for name in name_tag %}
+        {{ name | append:" "}}
+    {% endfor %} 
+</h3> -->
+
+<h3> Levels: 
+	{% for level in level_tag %}
+        <button class="button_level" id="button_level_{{level}}" onclick="myFunction(id)"  style="color:black">{{ level | append:" "}}</button>
+    {% endfor %} 
+</h3>
+
+<h3> Themes:
+    {% for theme in theme_tag %}
+		<button class="button_theme" id="button_theme_{{theme}}">{{ theme | append:" "}}</button>
+    {% endfor %}  
+</h3>
+
+<h3> Skills: 
+    {% for skill in skill_tag %}
+		<button class="button_skill" id="button_skill_{{skill}}">{{ skill | append:" "}}</button>
+    {% endfor %} 
+</h3>
+
+
+

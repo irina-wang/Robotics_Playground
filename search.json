@@ -1,0 +1,21 @@
+---
+---
+[
+  {% for item in site.data.all_data %}
+    {% assign temp_level = item.Levels | append: ', ' %}
+    {% assign temp_theme = item.Themes | append: ', ' %}
+    {% assign temp_skill = item.Skills | append: ', ' %}
+    {% assign temp_platform = item.Platforms | split:" " | join: "_" | prepend: '/' | append: '/' %}
+    {% assign temp = temp_level | append: temp_theme | append: temp_skill %}
+    {% assign temp_url = item.Names | split:" " | join: "_" | prepend:temp_platform  | append: ".html" %}
+    {
+      "title"    : "{{ item.Names | strip_html | escape }}",
+      "tags"     : "{{ temp | split:',' }}",
+      "description": "{{ item.Details }}",
+      "url": "{{ temp_url }}"
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]
+
+
+

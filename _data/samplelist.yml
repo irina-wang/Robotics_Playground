@@ -1,0 +1,23 @@
+toc:
+  - title: About
+    url: /about.html
+    subfolderitems:
+      - page: Tufts CEEO
+        url: https://ceeo.tufts.edu/
+  - title: Levels
+    subfolderitems:
+      - page: Easy
+        url: /easy.html
+      - page: Medium
+        url: /medium.html
+      - page: Hard
+        url: /hard.html
+  - title: Resources
+    subfolderitems:
+      - page: LEGO Engineering
+        url: http://www.legoengineering.com/
+  - title: Search
+    url: /search.html
+    # subfolderitems:
+    #   - page: search
+        
