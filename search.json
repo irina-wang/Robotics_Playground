@@ -5,15 +5,13 @@
     
     
     
-    
     {
       "title"    : "Aviary",
-      "tags"     : "Beginner Animals & Nature Building Focused ",
+      "tags"     : "beginner animals & nature building focused ",
       "description": "Design a bird! It can be realistic or imaginary (and it doesn’t actually need to fly).",
-      "url": "/SPIKE_Prime/Aviary.html"
+      "url": "/Robotics_Playground/spike_prime/aviary.html"
     } ,
   
-    
     
     
     
@@ -21,12 +19,11 @@
     
     {
       "title"    : "Ball Launcher",
-      "tags"     : "Intermediate Innovative Creations Building Focused ",
+      "tags"     : "intermediate innovative creations building focused ",
       "description": "Design a machine to throw a small plastic ball as accurately as possible.",
-      "url": "/SPIKE_Prime/Ball_Launcher.html"
+      "url": "/Robotics_Playground/spike_prime/ball_launcher.html"
     } ,
   
-    
     
     
     
@@ -34,12 +31,11 @@
     
     {
       "title"    : "Ball Thrower",
-      "tags"     : "Beginner Innovative Creations Building Focused ",
+      "tags"     : "beginner innovative creations building focused ",
       "description": "Design a machine to throw a small plastic ball as far as possible.",
-      "url": "/SPIKE_Prime/Ball_Thrower.html"
+      "url": "/Robotics_Playground/spike_prime/ball_thrower.html"
     } ,
   
-    
     
     
     
@@ -47,12 +43,11 @@
     
     {
       "title"    : "Can Do",
-      "tags"     : "Beginner Task Helpers All Skills ",
+      "tags"     : "beginner task helpers all skills ",
       "description": "Create a device that is able to grab and lift an empty soda can!",
-      "url": "/SPIKE_Prime/Can_Do.html"
+      "url": "/Robotics_Playground/spike_prime/can_do.html"
     } ,
   
-    
     
     
     
@@ -60,12 +55,11 @@
     
     {
       "title"    : "Clean Sweep",
-      "tags"     : "Beginner Task Helpers All Skills ",
+      "tags"     : "beginner task helpers all skills ",
       "description": "Create a sweeper to clear the floor of LEGO bricks or other small LEGO pieces. Any type of device is fine — broom, plow, vacuum — as long as it gets the floor clean.",
-      "url": "/SPIKE_Prime/Clean_Sweep.html"
+      "url": "/Robotics_Playground/spike_prime/clean_sweep.html"
     } ,
   
-    
     
     
     
@@ -73,12 +67,11 @@
     
     {
       "title"    : "Creepy Crawly",
-      "tags"     : "Beginner Animals & Nature All Skills ",
+      "tags"     : "beginner animals & nature all skills ",
       "description": "Make a creepy crawly—a worm, a bug, a spider, or any creepy-crawly creature.",
-      "url": "/SPIKE_Prime/Creepy_Crawly.html"
+      "url": "/Robotics_Playground/spike_prime/creepy_crawly.html"
     } ,
   
-    
     
     
     
@@ -86,12 +79,11 @@
     
     {
       "title"    : "Future Furniture",
-      "tags"     : "Beginner Innovative Creations All Skills ",
+      "tags"     : "beginner innovative creations all skills ",
       "description": "Make an exciting and useful piece of automated furniture that you would like to have!",
-      "url": "/SPIKE_Prime/Future_Furniture.html"
+      "url": "/Robotics_Playground/spike_prime/future_furniture.html"
     } ,
   
-    
     
     
     
@@ -99,12 +91,11 @@
     
     {
       "title"    : "Monster",
-      "tags"     : "Intermediate Supernatural All Skills ",
+      "tags"     : "intermediate supernatural all skills ",
       "description": "For this monstrous challenge, create a SPIKE Prime monster. It can be big or small, scary or funny—but it must respond to its environment in some way.",
-      "url": "/SPIKE_Prime/Monster.html"
+      "url": "/Robotics_Playground/spike_prime/monster.html"
     } ,
   
-    
     
     
     
@@ -112,12 +103,11 @@
     
     {
       "title"    : "Morning Helper",
-      "tags"     : "Intermediate Task Helpers All Skills ",
+      "tags"     : "intermediate task helpers all skills ",
       "description": "Getting up in the morning can be hard! Create a device to make mornings a little easier—a cool alarm clock, a toothpaste squeezer, or whatever you wish",
-      "url": "/SPIKE_Prime/Morning_Helper.html"
+      "url": "/Robotics_Playground/spike_prime/morning_helper.html"
     } ,
   
-    
     
     
     
@@ -125,12 +115,11 @@
     
     {
       "title"    : "Party Time",
-      "tags"     : "Intermediate Innovative Creations All Skills ",
+      "tags"     : "intermediate innovative creations all skills ",
       "description": "Make a robot that will bring the party to any room you enter! Be creative with music, movement, and more!",
-      "url": "/SPIKE_Prime/Party_Time.html"
+      "url": "/Robotics_Playground/spike_prime/party_time.html"
     } ,
   
-    
     
     
     
@@ -138,12 +127,11 @@
     
     {
       "title"    : "Percussion Playtime",
-      "tags"     : "Beginner Music & Movies All Skills ",
+      "tags"     : "beginner music & movies all skills ",
       "description": "Clash clang boom bang! Create a percussion instrument for a band. Drums, cymbals, xylophone, bells—any type of percussion instrument is welcome.",
-      "url": "/SPIKE_Prime/Percussion_Playtime.html"
+      "url": "/Robotics_Playground/spike_prime/percussion_playtime.html"
     } ,
   
-    
     
     
     
@@ -151,12 +139,11 @@
     
     {
       "title"    : "Puppet Show",
-      "tags"     : "Beginner Art & Literature All Skills ",
+      "tags"     : "beginner art & literature all skills ",
       "description": "Create any sort of puppet that moves using the SPIKE Prime.",
-      "url": "/SPIKE_Prime/Puppet_Show.html"
+      "url": "/Robotics_Playground/spike_prime/puppet_show.html"
     } ,
   
-    
     
     
     
@@ -164,12 +151,11 @@
     
     {
       "title"    : "Ramp Climbing Car",
-      "tags"     : "Beginner Sports & Cars Building Focused ",
+      "tags"     : "beginner sports & cars building focused ",
       "description": "Build a car that can climb as steep a ramp as possible.",
-      "url": "/SPIKE_Prime/Ramp_Climbing_Car.html"
+      "url": "/Robotics_Playground/spike_prime/ramp_climbing_car.html"
     } ,
   
-    
     
     
     
@@ -177,12 +163,11 @@
     
     {
       "title"    : "RoboChef",
-      "tags"     : "Intermediate Innovative Creations All Skills ",
+      "tags"     : "intermediate innovative creations all skills ",
       "description": "Everyone could use a hand with food preparation. Create a robot that helps you cook. It can do a single task, such as stirring a pot, or a complex operation, such as making a sandwich.",
-      "url": "/SPIKE_Prime/RoboChef.html"
+      "url": "/Robotics_Playground/spike_prime/robochef.html"
     } ,
   
-    
     
     
     
@@ -190,12 +175,11 @@
     
     {
       "title"    : "Simple Car",
-      "tags"     : "Beginner Sports & Cars Building Focused ",
+      "tags"     : "beginner sports & cars building focused ",
       "description": "Build a sturdy car using as few pieces as possible. Your robot needs to be able to drive forward for two seconds, backwards for two seconds, spin right for 2 seconds, and spin left for 2 seconds.",
-      "url": "/SPIKE_Prime/Simple_Car.html"
+      "url": "/Robotics_Playground/spike_prime/simple_car.html"
     } ,
   
-    
     
     
     
@@ -203,12 +187,11 @@
     
     {
       "title"    : "Space Exploration",
-      "tags"     : "Beginner Innovative Creations All Skills ",
+      "tags"     : "beginner innovative creations all skills ",
       "description": "Blast off on a space adventure! Create a rocket ship, a tool for a space traveler, or even an alien being—there are no limits to this cosmic journey.",
-      "url": "/SPIKE_Prime/Space_Exploration.html"
+      "url": "/Robotics_Playground/spike_prime/space_exploration.html"
     } ,
   
-    
     
     
     
@@ -216,12 +199,11 @@
     
     {
       "title"    : "Time Keeper",
-      "tags"     : "Intermediate Task Helpers Client Focused ",
+      "tags"     : "intermediate task helpers client focused ",
       "description": "It is easy to lose track of time. Create a timekeeping device to help you count the minutes—a clock, an hourglass, a pendulum—or any other way of keeping track of time.",
-      "url": "/SPIKE_Prime/Time_Keeper.html"
+      "url": "/Robotics_Playground/spike_prime/time_keeper.html"
     } ,
   
-    
     
     
     
@@ -229,12 +211,11 @@
     
     {
       "title"    : "Trophy",
-      "tags"     : "Beginner Innovative Creations All Skills ",
+      "tags"     : "beginner innovative creations all skills ",
       "description": "Make a trophy to celebrate an accomplishment you’re proud of: learning to ride a bike, taking care of a pet, preparing a meal, etc. Your trophy should use movement and/or sound to show what you achieved.",
-      "url": "/SPIKE_Prime/Trophy.html"
+      "url": "/Robotics_Playground/spike_prime/trophy.html"
     } ,
   
-    
     
     
     
@@ -242,12 +223,11 @@
     
     {
       "title"    : "Under the Sea",
-      "tags"     : "Intermediate Animals & Nature All Skills ",
+      "tags"     : "intermediate animals & nature all skills ",
       "description": "You are going on a deep-sea dive. Show what you discover on your undersea adventure. A strange fish? An exotic plant? A never-before-seen creature of the deep?",
-      "url": "/SPIKE_Prime/Under_the_Sea.html"
+      "url": "/Robotics_Playground/spike_prime/under_the_sea.html"
     } ,
   
-    
     
     
     
@@ -255,12 +235,11 @@
     
     {
       "title"    : "Greetings Earthings",
-      "tags"     : "Beginner Mechanics & Movement All Skills ",
+      "tags"     : "beginner mechanics & movement all skills ",
       "description": "Build a robot that greets people with a wave, a fist bump, a high five, or some other welcoming movement!",
-      "url": "/SPIKE_Prime/Greetings_Earthings.html"
+      "url": "/Robotics_Playground/spike_prime/greetings_earthings.html"
     } ,
   
-    
     
     
     
@@ -268,12 +247,11 @@
     
     {
       "title"    : "Pet Sitter",
-      "tags"     : "Intermediate Animals & Nature All Skills ",
+      "tags"     : "intermediate animals & nature all skills ",
       "description": "Build a device to help you take care of an animal. It can be any animal—use your imagination!",
-      "url": "/SPIKE_Prime/Pet_Sitter.html"
+      "url": "/Robotics_Playground/spike_prime/pet_sitter.html"
     } ,
   
-    
     
     
     
@@ -281,12 +259,11 @@
     
     {
       "title"    : "Silly Walks",
-      "tags"     : "Beginner Mechanics & Movement All Skills ",
+      "tags"     : "beginner mechanics & movement all skills ",
       "description": "Build a robot that moves forwards – without using wheels!",
-      "url": "/SPIKE_Prime/Silly_Walks.html"
+      "url": "/Robotics_Playground/spike_prime/silly_walks.html"
     } ,
   
-    
     
     
     
@@ -294,12 +271,11 @@
     
     {
       "title"    : "Tricky-Food Utencil",
-      "tags"     : "Beginner Task Helpers Building Focused ",
+      "tags"     : "beginner task helpers building focused ",
       "description": "Some foods can be difficult to eat — Peas. Wonton Soup. Masala Dosa. Grapefruit. Spaghetti. Invent a utensil to help you eat a food you find tricky.",
-      "url": "/SPIKE_Prime/Tricky-Food_Utencil.html"
+      "url": "/Robotics_Playground/spike_prime/tricky-food_utencil.html"
     } ,
   
-    
     
     
     
@@ -307,12 +283,11 @@
     
     {
       "title"    : "Human Plus",
-      "tags"     : "Intermediate Innovative Creations Client Focused ",
+      "tags"     : "intermediate innovative creations client focused ",
       "description": "Create a device to improve human capabilities—an arm that can reach high shelves, eyes that determine color—or whatever improvement you can imagine.",
-      "url": "/SPIKE_Prime/Human_Plus.html"
+      "url": "/Robotics_Playground/spike_prime/human_plus.html"
     } ,
   
-    
     
     
     
@@ -320,12 +295,11 @@
     
     {
       "title"    : "Ski Lift",
-      "tags"     : "Intermediate Task Helpers Building Focused ",
+      "tags"     : "intermediate task helpers building focused ",
       "description": "LEGO Ski Mountain needs a new ski lift! Make an automated mechanism to transport LEGO people up a slope. Control the lift with a sensor and make its cycle finish at the starting position.",
-      "url": "/SPIKE_Prime/Ski_Lift.html"
+      "url": "/Robotics_Playground/spike_prime/ski_lift.html"
     } ,
   
-    
     
     
     
@@ -333,9 +307,9 @@
     
     {
       "title"    : "Tools For School",
-      "tags"     : "Beginner Innovative Creations All Skills ",
+      "tags"     : "beginner innovative creations all skills ",
       "description": "Make a tool to aid you at school—a robotic pencil holder, a calculator, a lunch box—whatever you think will help make you a successful scholar.",
-      "url": "/SPIKE_Prime/Tools_For_School.html"
+      "url": "/Robotics_Playground/spike_prime/tools_for_school.html"
     } ,
   
     
@@ -343,12 +317,11 @@
     
     
     
-    
     {
       "title"    : "Word Cup",
-      "tags"     : "Intermediate Sports & Cars Building Focused ",
+      "tags"     : "intermediate sports & cars building focused ",
       "description": "Make a robot that plays in a soccer match.",
-      "url": "/SPIKE_Prime/Word_Cup.html"
+      "url": "/Robotics_Playground/spike_prime/word_cup.html"
     } 
   
 ]
