@@ -115,9 +115,9 @@ description: This is a post page
     
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
     <!-- <div class="w3-content" style> -->
-        <p style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge">{{ page.Levels }}</button></p>
-        <p style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge">{{ page.Themes }}</button></p>
-        <p style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge">{{ page.Skills }}</button></p>
+        <p style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge"><a href="{{site.baseurl}}/explore/levels/{{page.Levels | append:".html"}}">{{ page.Levels }}</a></button></p>
+        <p style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"><a href="{{site.baseurl}}/explore/themes/{{page.Themes | append:".html"}}">{{ page.Themes }}</a></button></p>
+        <p style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge"><a href="{{site.baseurl}}/explore/skills/{{page.Skills | append:".html"}}">{{ page.Skills }}</a></button></p>
     </div>
 </div>
     

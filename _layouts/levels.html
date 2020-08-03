@@ -7,80 +7,33 @@
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      
-      <style>
-          .card {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            /* width: 40%; */
-          }
-          
-          .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-          }
-          
-          .container {
-            padding: 2px 16px;
-          }
-      
-          .grid-container {
-              display: grid;
-              grid-template-columns: 24% 24% 24% 24%;
-              grid-gap: 10px;
-              background-color: #2196F3;
-              padding: 10px;
-              align-items: center;
-          }
-      
-          .grid-container .card{
-              background-color: rgba(255, 255, 255, 0.8);
-              /* border: 1px solid black; */
-              /* text-align: center; */
-              /* font-size: 30px; */
-              }
-      
-          .button {
-              background-color: #4CAF50; /* Green */
-              border: none;
-              color: white;
-              padding: 4px 8px;
-              text-align: center;
-              text-decoration: none;
-              display: inline-block;
-              /* font-size: 16px; */
-              margin: 2px 1px;
-              transition-duration: 0.4s;
-              cursor: pointer;
-          }
-      
-          .tag {
-              background-color: white;
-              color: black;
-              border: 1px solid #e7e7e7;
-              }
-      
-          .tag:hover {
-              background-color: #e7e7e7;}
-          </style>
+      <link rel="stylesheet" href="{{site.baseurl}}/assets/css/card.css">
   </head>
   <body style="background-color: pink;">
     {% include header.html %}
     {% include nav.html %}
-    <h1> based on Levels </h1>
- 
-      <h1> {{ page.title }}</h1>
-      <div class="grid-container">
+
+    <div class="w3-container w3-padding-64 w3-xlarge" id="about">
+      <div class="w3-content">
+        <h1 class="w3-center w3-jumbo"><b>{{ page.title }}</b></h1>
+        <center><button class="w3-button w3-pink w3-round-xlarge">based on Levels</button></center>
+      </div>
+  </div>
+
+      <div class="grid-container" >
       {% for item in site.data.all_data %}
       {% assign field =  "Levels" %}
           {% if item[field] == page.title %} 
           <div class="card">
-            <a href="/{{item.Platforms}}/{{item.Names | split:" " | join: "_" | append: ".html"}}" target="_blank">
+            <a href="{{site.baseurl}}/{{item.Platforms}}/{{item.Names | split:" " | join: "_" | append: ".html"}}" target="_blank">
             <img src="{{item.Big_Imgs}}" style="width:100%"> </a>
             <div class="container"> 
-              <a href="{{item.Urls}}" target="_blank"><h4><b>{{ item.Names }}</b></h4></a>
-                  <p style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge">{{ item.Levels }}</button></p>
-                  <p style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge">{{ item.Themes }}</button></p>
-                  <p style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge">{{ item.Skills }}</button></p>
+              <a href="{{site.baseurl}}{{item.Urls}}" target="_blank"><h4><b>{{ item.Names }}</b></h4></a>
+              <div style="text-align: right;">
+                <div style="display: inline-block"><button class="w3-button w3-pink w3-round-xlarge" style="margin-bottom: 10px;"><a href="{{site.baseurl}}/explore/levels/{{ item.Levels | append: ".html" | downcase}}">{{ item.Levels }}</a></button></div> <br/>
+                <div style="display: inline-block"><button class="w3-button w3-deep-orange w3-round-xlarge"  style="margin-bottom: 10px;"><a href="{{site.baseurl}}/explore/themes/{{ item.Themes | split:" " | join: "_" | append: ".html" | downcase}}">{{ item.Themes }}</a></button></div><br/>
+                <div style="display: inline-block"><button class="w3-button w3-purple w3-round-xlarge" style="margin-bottom: 10px;"><a href="{{site.baseurl}}/explore/skills/{{ item.Skills| split:" " | join: "_" | append: ".html" | downcase}}">{{ item.Skills }}</a></button></div>
+            </div>
             </div>
           </div> 
         {% endif %}
